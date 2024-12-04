@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --brand: #f16820;
+  --accent: #060709;
+  --bg-img-url: "https://limousine-dubai.ae/wp-content/uploads/2024/11/Featuring-Photo-4-1024x574.jpeg"
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --brand: #f16820;
+    --accent: #060709;
+    --bg-img-url: "https://limousine-dubai.ae/wp-content/uploads/2024/11/Featuring-Photo-4-1024x574.jpeg"
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  @apply w-full sm:w-[80%] mx-auto px-4
+}
+
+.flex-centered {
+  @apply flex items-center justify-center
+}
+
+.flex-col-center {
+  @apply flex flex-col justify-center
+}
+
+.flex-center-between {
+  @apply flex items-center justify-between
+}
+
+.h1 {
+  @apply text-6xl font-black leading-[70px] tracking-normal
+}
+
+.h1b {
+  @apply text-5xl font-black leading-[60px] tracking-normal
+}
+
+.h2 {
+  @apply text-4xl font-black
+}
+
+.h3 {
+  @apply text-2xl font-black tracking-wide
+}
+
+.h4 {
+  @apply font-black tracking-wider
+}
+
+.h4b {
+  @apply font-bold tracking-wide
+}
+
+.p {
+  @apply text-sm tracking-wide leading-[24px]
+}
+
+.button {
+  @apply bg-brand text-white px-8 py-4 uppercase font-semibold text-sm tracking-wide transition-colors hover:bg-black hover:text-white
+}
+
+.button-alt {
+  @apply bg-white text-brand px-8 py-4 uppercase font-semibold text-sm tracking-wide transition-colors hover:bg-black hover:text-white
+}
