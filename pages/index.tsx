@@ -8,7 +8,6 @@ import Gallery from "@/components/molecules/gallery";
 import SectionC from "@/components/molecules/section-c";
 import Testimonials from "@/components/molecules/testimonials";
 import SectionD from "@/components/molecules/section-d";
-import Footer from "@/components/atoms/footer";
 import Fab from "@/components/atoms/fab";
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
       <SectionC />
       <Testimonials />
       <SectionD />
-      <Footer />
       <Fab />
     </main>
   );

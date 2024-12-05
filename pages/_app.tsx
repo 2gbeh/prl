@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./_globals.css";
 
 import type { ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
@@ -6,8 +6,9 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 //
-import Header from "@/components/atoms/header";
 import Banner from "@/components/atoms/banner";
+import Header from "@/components/atoms/header";
+import Footer from "@/components/atoms/footer";
 import { APP } from "@/constants/APP";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -53,6 +54,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       {router.asPath === "/" && <Banner />}
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </>,
   );
 }

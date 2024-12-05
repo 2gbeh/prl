@@ -1,25 +1,12 @@
-import React, { ReactElement } from "react";
-import Head from "next/head";
+import React from "react";
 //
-import { APP } from "@/constants/APP";
-import HomeLayout from "@/components/layouts/app-layout";
 import Tent from "@/components/atoms/tent";
 
-const ContactUs = () => {
+export const getStaticProps = () => ({ props: { title: "Contact Us" } });
+
+export default function ContactUs() {
   console.log("🚀 ~ ContactUs");
   // renders
   return <Tent>ContactUs</Tent>;
-};
+}
 
-ContactUs.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <>
-      <Head>
-        <title>Contact Us | {APP.name_short}</title>
-      </Head>
-      <HomeLayout>{page}</HomeLayout>
-    </>
-  );
-};
-
-export default ContactUs;

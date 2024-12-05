@@ -9,3 +9,5 @@ export default function AboutUs() {
   // renders
   return <Tent>AboutUs</Tent>;
 }
+
+
