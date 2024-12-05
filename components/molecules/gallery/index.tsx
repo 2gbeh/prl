@@ -7,6 +7,7 @@ interface IProps {}
 
 const Gallery: React.FC<IProps> = ({}) => {
   const { isMobile } = useDeviceManager();
+  let j = -1
   console.log("🚀 ~ Gallery");
   // renders
   return (
@@ -15,7 +16,7 @@ const Gallery: React.FC<IProps> = ({}) => {
         <h1 className="h2 text-center">Car Gallery</h1>
         <ul className="flex-centered flex-wrap gap-10">
           {[...Array(12)].map((_, i) => {
-            let j = i + 1;
+            j = i + 1;
             return (
               <li key={i}>
                 <figure className="space-y-4">
