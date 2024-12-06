@@ -11,7 +11,7 @@ const Card: React.FC<IProps> = ({ children, src, size = 480, rtl }) => {
   console.log("🚀 ~ Card");
   // renders
   return (
-    <section className="container flex items-center gap-20 py-20">
+    <section className="flex-col container flex items-center gap-10 sm:gap-20 py-10 sm:py-20 sm:flex-row">
       {rtl ? (
         <>
           <article className="space-y-5">{children}</article>
