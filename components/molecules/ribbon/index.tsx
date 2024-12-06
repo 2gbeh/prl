@@ -10,7 +10,7 @@ const Ribbon: React.FC<IProps> = ({ children, heading }) => {
   // renders
   return (
     <section
-      className="flex-col-center min-h-[320px] bg-accent py-4 text-white"
+      className="flex-col-center min-h-[160px] bg-accent py-4 text-white sm:min-h-[320px]"
       style={backgroundImageStyles("/uploads/ribbon.png")}
     >
       {children ?? (

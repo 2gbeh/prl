@@ -65,6 +65,10 @@ body {
   @apply text-2xl font-black tracking-wide leading-8
 }
 
+.h3b {
+  @apply text-xl font-black tracking-wide leading-8
+}
+
 .h4 {
   @apply font-black tracking-wider
 }

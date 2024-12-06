@@ -1,5 +1,5 @@
 import { mailto, tel } from "@/utils/formatHref";
-// Lauderhill is a city in Broward County, Florida, United States
+
 export const APP = {
   url: "https://peterrenzlimoservices.com",
   domain: "peterrenzlimoservices.com",
