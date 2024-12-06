@@ -13,7 +13,7 @@ const Hero: React.FC<IProps> = ({}) => {
   return (
     <section
       className="flex-col-center h-screen bg-accent text-white"
-      style={backgroundImageStyles("/uploads/cover-2.png", "fixed")}
+      style={backgroundImageStyles("/uploads/hero.png", "fixed")}
     >
       <div className="container">
         <div className="max-w-[520px] space-y-6">
@@ -25,9 +25,14 @@ const Hero: React.FC<IProps> = ({}) => {
             Rent a Luxury Car Today & Enjoy the Best Deals & Rates. <br />
           </p>
           <div className="space-y-6 sm:space-x-6">
-            {/* <button className="button">VISIT CAR GALLERY</button> */}
             <button
               className="button"
+              onClick={() => router.push("/return-policy")}
+            >
+              RETURN POLICY
+            </button>
+            <button
+              className="button-alt"
               onClick={() => router.push("/contact-us")}
             >
               CONTACT US

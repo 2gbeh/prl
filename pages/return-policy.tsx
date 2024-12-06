@@ -1,7 +1,7 @@
 import React from "react";
 //
 import Tent from "@/components/atoms/tent";
-import SectionD from "@/components/molecules/section-d";
+import Ribbon from "@/components/molecules/ribbon";
 
 export const getStaticProps = () => ({ props: { title: "Return Policy" } });
 
@@ -10,7 +10,7 @@ export default function ReturnPolicy() {
   // renders
   return (
     <main>
-      <SectionD />
+      <Ribbon />
       <Tent as="partial">ReturnPolicy</Tent>
     </main>
   );
