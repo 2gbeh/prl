@@ -12,7 +12,7 @@ const Hero: React.FC<IProps> = ({}) => {
   // renders
   return (
     <section
-      className="flex-col-center h-screen bg-accent text-white"
+      className="flex-col-center h-[480px] bg-accent text-white sm:h-screen"
       style={backgroundImageStyles("/uploads/hero.png", "fixed")}
     >
       <div className="container">
@@ -24,7 +24,7 @@ const Hero: React.FC<IProps> = ({}) => {
           <p className="text-lg">
             Rent a Luxury Car Today & Enjoy the Best Deals & Rates. <br />
           </p>
-          <div className="space-y-6 sm:space-x-6">
+          <div className="flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-6">
             <button
               className="button"
               onClick={() => router.push("/return-policy")}

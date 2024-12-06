@@ -13,7 +13,7 @@ export default function ReturnPolicy() {
     <main>
       <Fab />
       <Ribbon heading="Return Policy" />
-      <section className="container-sm space-y-10 py-20">
+      <section className="container-sm space-y-10 py-10 sm:py-20">
         <article className="h3 mb-10">
           At {APP.name_short}, we strive to provide our customers with the best
           possible experience. If for any reason you're not satisfied with your

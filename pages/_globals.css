@@ -30,11 +30,11 @@ body {
 }
 
 .container {
-  @apply w-full sm:w-[80%] mx-auto px-4
+  @apply w-full sm:w-[80%] mx-auto px-6
 }
 
 .container-sm {
-  @apply w-full sm:w-[50%] mx-auto px-4
+  @apply w-full sm:w-[50%] mx-auto px-6
 }
 
 .flex-centered {
