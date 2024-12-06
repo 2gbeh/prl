@@ -13,7 +13,7 @@ const Hero: React.FC<IProps> = ({}) => {
   return (
     <section
       className="flex-col-center h-[480px] bg-accent text-white sm:h-screen"
-      style={backgroundImageStyles("/uploads/hero.png", "fixed")}
+      style={backgroundImageStyles("/uploads/hero-invert.png", "fixed")}
     >
       <div className="container">
         <div className="max-w-[520px] space-y-6">

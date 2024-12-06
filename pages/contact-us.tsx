@@ -25,7 +25,7 @@ export default function ContactUs() {
               Address
             </h1>
             <article className="h2">{APP.address}</article>
-            <div className="sm:flex sm:items-center sm:space-x-8 space-y-6">
+            <div className="space-y-6 sm:flex sm:items-center sm:space-x-8">
               <button className="button flex items-center gap-2">
                 <MailIcon size={18} color="white" />
                 <a href={APP.mailto} target="_top">
@@ -42,7 +42,7 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
-      <Testimonials />
+      <section>Frequently Asked Questions</section>
     </main>
   );
 }

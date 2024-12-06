@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { MenuIcon, XIcon } from "lucide-react";
@@ -11,8 +11,11 @@ interface IProps {}
 
 const Header: React.FC<IProps> = ({}) => {
   const router = useRouter();
-  const [openDrawer, setOpenDrawer] = useState(true);
+  const [openDrawer, setOpenDrawer] = useState(false);
   const toggleDrawer = () => setOpenDrawer((prev) => !prev);
+  useEffect(() => {
+    setOpenDrawer(false);
+  }, [  ]);
   console.log("🚀 ~ Header");
   // renders
   return (
