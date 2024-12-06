@@ -15,7 +15,7 @@ const Header: React.FC<IProps> = ({}) => {
   const toggleDrawer = () => setOpenDrawer((prev) => !prev);
   useEffect(() => {
     setOpenDrawer(false);
-  }, [  ]);
+  }, [router]);
   console.log("🚀 ~ Header");
   // renders
   return (

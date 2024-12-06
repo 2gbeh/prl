@@ -1,6 +1,5 @@
 import React from "react";
 //
-import Fab from "@/components/atoms/fab";
 import Ribbon from "@/components/molecules/ribbon";
 import { APP } from "@/constants/APP";
 
@@ -11,7 +10,6 @@ export default function ReturnPolicy() {
   // renders
   return (
     <main>
-      <Fab />
       <Ribbon heading="Return Policy" />
       <section className="container-sm space-y-10 py-10 sm:py-20">
         <article className="h3 mb-10">

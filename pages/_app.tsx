@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import Banner from "@/components/atoms/banner";
 import Header from "@/components/atoms/header";
 import Footer from "@/components/atoms/footer";
+import Fab from "@/components/atoms/fab";
 import { APP } from "@/constants/APP";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -56,6 +57,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       <Header />
       <Component {...pageProps} />
       <Footer />
+      <Fab />
     </>,
   );
 }

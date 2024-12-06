@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
 //
-import Fab from "@/components/atoms/fab";
 import Hero from "@/components/molecules/hero";
 import Services from "@/components/molecules/services";
 import Testimonials from "@/components/molecules/testimonials";
@@ -16,7 +15,6 @@ export default function Home() {
   // renders
   return (
     <main>
-      <Fab />
       <Hero />
       <Services />
       <section
