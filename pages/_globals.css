@@ -33,6 +33,10 @@ body {
   @apply w-full sm:w-[80%] mx-auto px-6
 }
 
+.container-md {
+  @apply w-full sm:w-[75%] mx-auto px-6
+}
+
 .container-sm {
   @apply w-full sm:w-[50%] mx-auto px-6
 }

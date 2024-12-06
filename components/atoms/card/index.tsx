@@ -3,10 +3,11 @@ import Figure from "../figure";
 
 interface IProps extends PropsWithChildren {
   src: string;
+  size?: number;
   rtl?: boolean;
 }
 
-const Card: React.FC<IProps> = ({ children, src, rtl }) => {
+const Card: React.FC<IProps> = ({ children, src, size = 480, rtl }) => {
   console.log("🚀 ~ Card");
   // renders
   return (
@@ -14,11 +15,11 @@ const Card: React.FC<IProps> = ({ children, src, rtl }) => {
       {rtl ? (
         <>
           <article className="space-y-5">{children}</article>
-          <Figure src={src} size={640} />
+          <Figure src={src} size={size} />
         </>
       ) : (
         <>
-          <Figure src={src} size={640} />
+          <Figure src={src} size={size} />
           <article className="space-y-5">{children}</article>
         </>
       )}
