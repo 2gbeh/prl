@@ -1,10 +1,13 @@
 import React from "react";
+import { useRouter } from "next/router";
+//
 import { backgroundImageStyles } from "@/utils/backgroundImageStyles";
 import { APP } from "@/constants/APP";
 
 interface IProps {}
 
 const Hero: React.FC<IProps> = ({}) => {
+  const router = useRouter();
   console.log("🚀 ~ Hero");
   // renders
   return (
@@ -22,8 +25,13 @@ const Hero: React.FC<IProps> = ({}) => {
             Rent a Luxury Car Today & Enjoy the Best Deals & Rates. <br />
           </p>
           <div className="space-y-6 sm:space-x-6">
-            <button className="button">VISIT CAR GALLERY</button>
-            <button className="button-alt">CONTACT US</button>
+            {/* <button className="button">VISIT CAR GALLERY</button> */}
+            <button
+              className="button"
+              onClick={() => router.push("/contact-us")}
+            >
+              CONTACT US
+            </button>
           </div>
         </div>
       </div>

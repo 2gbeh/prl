@@ -14,7 +14,9 @@ const Header: React.FC<IProps> = ({}) => {
   return (
     <header className="bg-white py-4">
       <div className="flex-center-between container">
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
         <nav className="">
           <i className="block sm:hidden">
             <MenuIcon size={32} />
@@ -23,7 +25,7 @@ const Header: React.FC<IProps> = ({}) => {
             {[
               { label: "HOME", path: "/" },
               { label: "ABOUT US", path: "/about-us" },
-              { label: "CAR GALLERY", path: "/gallery" },
+              { label: "RETURN POLICY", path: "/return-policy" },
               { label: "CONTACT US", path: "/contact-us" },
             ].map(({ label, path }, i) => (
               <Link

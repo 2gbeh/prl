@@ -1,10 +1,7 @@
 import React from "react";
 //
-import Tent from "@/components/atoms/tent";
 import Hero from "@/components/molecules/hero";
 import SectionA from "@/components/molecules/section-a";
-import SectionB from "@/components/molecules/section-b";
-import Gallery from "@/components/molecules/gallery";
 import SectionC from "@/components/molecules/section-c";
 import Testimonials from "@/components/molecules/testimonials";
 import SectionD from "@/components/molecules/section-d";
@@ -17,8 +14,6 @@ export default function Home() {
     <main>
       <Hero />
       <SectionA />
-      <SectionB />
-      <Gallery />
       <SectionC />
       <Testimonials />
       <SectionD />
