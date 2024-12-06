@@ -10,7 +10,7 @@ export default function AboutUs() {
   // renders
   return (
     <main>
-      <Ribbon />
+      <Ribbon heading="About Us" />
       <Tent as="partial">AboutUs</Tent>
     </main>
   );

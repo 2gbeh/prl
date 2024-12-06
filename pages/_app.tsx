@@ -51,7 +51,8 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       </Head>
 
       {/* MARKUP */}
-      {router.asPath === "/" && <Banner />}
+      {/* {router.asPath !== "/contact-us" && <Banner />} */}
+      <Banner />
       <Header />
       <Component {...pageProps} />
       <Footer />

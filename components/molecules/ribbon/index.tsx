@@ -1,13 +1,11 @@
-import React from "react";
-import { useRouter } from "next/router";
-//
+import React, { PropsWithChildren } from "react";
 import { backgroundImageStyles } from "@/utils/backgroundImageStyles";
-import { APP } from "@/constants/APP";
 
-interface IProps {}
+interface IProps extends PropsWithChildren {
+  heading?: string;
+}
 
-const Ribbon: React.FC<IProps> = ({}) => {
-  const router = useRouter();
+const Ribbon: React.FC<IProps> = ({ children, heading }) => {
   console.log("🚀 ~ Ribbon");
   // renders
   return (
@@ -15,12 +13,11 @@ const Ribbon: React.FC<IProps> = ({}) => {
       className="flex-col-center min-h-[320px] bg-accent py-4 text-white"
       style={backgroundImageStyles("/uploads/ribbon.png")}
     >
-      <div className="container space-y-10">
-        <h1 className="h3 sm:max-w-[640px]">{APP.about}</h1>
-        <button className="button" onClick={() => router.push("/contact-us")}>
-          CONTACT US
-        </button>
-      </div>
+      {children ?? (
+        <div className="container">
+          <h1 className="h2">{heading}</h1>
+        </div>
+      )}
     </section>
   );
 };

@@ -1,5 +1,7 @@
 import React from "react";
+import Link from "next/link";
 import { MailIcon, MapPinIcon, SmartphoneIcon } from "lucide-react";
+// 
 import { APP } from "@/constants/APP";
 
 interface IProps {}
@@ -11,21 +13,21 @@ const Footer: React.FC<IProps> = ({}) => {
   return (
     <footer className="bg-accent px-4 text-white">
       <div className="container space-y-10">
-        <ul className="flex flex-col sm:flex-row gap-10 sm:gap-20 pt-20">
+        <ul className="flex flex-col gap-10 pt-20 sm:flex-row sm:gap-20">
           <li className="flex-1 space-y-2">
             <h1 className="h3 text-brand">{APP.name_short}</h1>
             <article className="p text-gray-200">{APP.about}</article>
           </li>
           <li className="flex-1 space-y-4">
-            <h1 className="h4">Our Services</h1>
+            <h1 className="h4">Navigation</h1>
             <ol className="p space-y-2 text-gray-200">
-              <li>Car Rentals</li>
-              <li>Chauffeur</li>
-              <li>Convoy/Escort</li>
+              <li><Link href="/about-us" className="underline hover:text-brand">About Us</Link></li>
+              <li><Link href="/return-policy" className="underline hover:text-brand">Return Policy</Link></li>
+              <li><Link href="/contact-us" className="underline hover:text-brand">Contact Us</Link></li>
             </ol>
           </li>
           <li className="flex-1 space-y-4">
-            <h1 className="h4">Our Catalogue</h1>
+            <h1 className="h4">Our Services</h1>
             <ol className="p space-y-2 text-gray-200">
               <li>Limousines</li>
               <li>Luxury Cars</li>
