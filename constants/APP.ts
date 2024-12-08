@@ -13,7 +13,7 @@ export const APP = {
     "We have well-vetted professional drivers that guarantee your safety to your destination.",
   summary:
     "We provide Limousine and SUV transportation in Lauderhill, Broward County, Florida.",
-  about: `Peter Renz Limo Services has been serving Lauderhill, Florida for over 10+ years, offering unparalleled customer service, comfort and unmatched rates in luxury car rides. Whether you need a luxury car ride for a business meeting, a tourist vacation or just for a drive in Broward County, our professional drivers will help you reach your destination with the most quality experience for your needs.`,
+  about: `Peter Renz Limo Services has been serving Lauderhill, Florida for less than a year, offering unparalleled customer service, comfort and unmatched rates in luxury car rides. Whether you need a luxury car ride for a business meeting, a tourist vacation or just for a drive in Broward County, our professional drivers will help you reach your destination with the most quality experience for your needs.`,
   about_2: `At Peter Renz Limo Services, we strive to provide our customers with luxury car rides driven by professional drivers. If for any reason you're not satisfied with your experience, we're here to help.`,
   address: "2930 NW 55th ave apt 1B Lauderhill FL 33313",
   address_line1: "2930 NW 55th ave apt 1B",

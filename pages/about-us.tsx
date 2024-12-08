@@ -13,33 +13,33 @@ export default function AboutUs() {
   return (
     <main>
       <Ribbon heading="About Us" />
-      <Card src="/uploads/team.png" size={640}>
+      <Card src="/uploads/fleet-invert.png" size={640}>
         <h2 className="h2">{APP.name_short}</h2>
         <p className="p">{APP.about}</p>
         <p className="p">{APP.about_2}</p>
       </Card>
       <section
         className="bg-accent py-10"
-        style={backgroundImageStyles("/uploads/team.png", "fixed")}
+        style={backgroundImageStyles("/uploads/hero.png", "fixed")}
       >
         <div className="container-md">
           <ul className="flex-centered flex-col gap-5 sm:flex-row">
-            <li className="flex-1 space-y-4 text-center">
-              <h1 className="h1 text-white">10+</h1>
+            {/* <li className="flex-1 space-y-4 text-center">
+              <h1 className="h1 text-white">&lt; 1</h1>
               <p className="font-bold text-brand">Years of Experience</p>
-            </li>
+            </li> */}
             <li className="flex-1 space-y-4 text-center">
-              <h1 className="h1 text-white">100</h1>
+              <h1 className="h1 text-white">5</h1>
               <p className="font-bold text-brand">Luxury Vehicles</p>
             </li>
             <li className="flex-1 space-y-4 text-center">
-              <h1 className="h1 text-white">50</h1>
+              <h1 className="h1 text-white">7</h1>
               <p className="font-bold text-brand">Professional Drivers</p>
             </li>
-            <li className="flex-1 space-y-4 text-center">
+            {/* <li className="flex-1 space-y-4 text-center">
               <h1 className="h1 text-white">2000</h1>
               <p className="font-bold text-brand">Happy Customers</p>
-            </li>
+            </li> */}
           </ul>
         </div>
       </section>
