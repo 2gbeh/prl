@@ -1,38 +1,40 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Figure from "../../atoms/figure";
 
 interface IProps {}
 
 const Testimonials: React.FC<IProps> = ({}) => {
+  const router = useRouter();
   console.log("🚀 ~ Testimonials");
   // renders
   return (
-    <section className="flex-col-center sm:h-screen bg-white sm:py-0 py-20">
+    <section className="flex-col-center bg-white py-20 sm:h-screen sm:py-0">
       <div className="container space-y-10 text-center">
-        <h1 className="h2">Testimonials</h1>
-        <ul className="flex sm:flex-row flex-col justify-center gap-10">
+        <h1 className="h2">Customer Review</h1>
+        <ul className="flex flex-col justify-center gap-10 sm:flex-row">
           {[
             {
               avatar: "/uploads/testimonial-1.png",
               name: "David Williams",
-              message: `"This is my first time renting a luxury car. I am
-              completely satisfied with the service. Special thanks to the Sales Team, 
-              their professionalism is primo."`,
+              message: `"My first time ordering a Limousine ride. I am
+              completely satisfied with the service. Special thanks to the Drivers, 
+              their professionalism is top notch."`,
             },
             {
               avatar: "/uploads/testimonial-3.png",
               name: "Lara Pardo",
-              message: ` "Very helpful, extremely fast and efficient. This is the second
-              time in 3 months, and will definitely use them again and recommend them to others."`,
+              message: `"Very professional, extremely fast and efficient Drivers. This is the second
+              time in 3 months, and will definitely use them again and recommend them."`,
             },
             {
               avatar: "/uploads/testimonial-2.png",
               name: "Andy Carlos",
-              message: `"Sometimes it is a little magical renting a luxury car, and when
-              contact is established, the representatives are quite friendly and helpful. Thanks."`,
+              message: `"Sometimes it is a little magical being driven in a Limousine, 
+              the Drivers are quite friendly and professional. Thanks."`,
             },
           ].map((item, i) => (
-            <li className="w-[100%] sm:w-[30%] space-y-4" key={i}>
+            <li className="w-[100%] space-y-4 sm:w-[30%]" key={i}>
               <figure className="flex-centered">
                 <Figure src={item.avatar} size={100} rounded />
               </figure>
@@ -41,7 +43,9 @@ const Testimonials: React.FC<IProps> = ({}) => {
             </li>
           ))}
         </ul>
-        <button className="button">MORE REVIEWS</button>
+        <button className="button" onClick={() => router.push("/about-us")}>
+          MORE REVIEWS
+        </button>
       </div>
     </section>
   );

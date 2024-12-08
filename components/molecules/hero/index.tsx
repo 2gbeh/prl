@@ -21,10 +21,8 @@ const Hero: React.FC<IProps> = ({}) => {
             <h2 className="h4b sm:h4">WE ARE OPEN 24/7 INCLUDING WEEKENDS</h2>
             <h1 className="h1b sm:h1">{APP.name_short}</h1>
           </hgroup>
-          <p className="text-lg">
-            Rent a Luxury Car Today & Enjoy the Best Deals & Rates. <br />
-          </p>
-          <div className="flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-6">
+          <p className="text-lg max-w-[380px]">{APP.tagline}</p>
+          <div className="flex flex-col space-y-6 sm:flex-row sm:space-x-6 sm:space-y-0">
             <button
               className="button"
               onClick={() => router.push("/return-policy")}

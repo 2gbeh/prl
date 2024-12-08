@@ -16,7 +16,7 @@ const Footer: React.FC<IProps> = ({}) => {
         <ul className="flex flex-col gap-10 pt-20 sm:flex-row sm:gap-20">
           <li className="flex-1 space-y-2">
             <h1 className="h3 text-brand">{APP.name_short}</h1>
-            <article className="p text-gray-200">{APP.about}</article>
+            <article className="p text-gray-200">{APP.summary}</article>
           </li>
           <li className="flex-1 space-y-4">
             <h1 className="h4">Navigation</h1>
@@ -29,9 +29,9 @@ const Footer: React.FC<IProps> = ({}) => {
           <li className="flex-1 space-y-4">
             <h1 className="h4">Our Services</h1>
             <ol className="p space-y-2 text-gray-200">
-              <li>Limousines</li>
-              <li>Luxury Cars</li>
-              <li>Luxury SUVs</li>
+              <li>Limousine Rides</li>
+              <li>Professional Drivers</li>
+              <li>Luxury Cars & SUVs</li>
             </ol>
           </li>
           <li className="flex-1 space-y-4">

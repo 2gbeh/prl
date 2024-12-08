@@ -5,12 +5,16 @@ export const APP = {
   domain: "peterrenzlimoservices.com",
   name: "Peter Renz Limo Services Corp",
   name_short: "Peter Renz Limo Services",
-  about:
-    "We provide limousine and SUV transportation in Lauderhill, Florida and the greater Bay area.",
   description:
-    "Peter Renz Limo Services provides limousine and SUV chauffeured transportation in Lauderhill, Florida and the greater Bay area. Book online or call our dedicated customer service agents 24 hours a day at (786) 624-0376.",
+    "Peter Renz Limo Services provides Limousine and SUV transportation in Lauderhill, Broward County, Florida. Book online or call our dedicated customer service agents 24 hours a day at (786) 624-0376.",
   keywords:
-    "Peter Renz Limo,Peter Renz Limo Services,Peter Renz Limo Services Corp,limousine rental service,SUV rental service,limousine rental Lauderhill,limousine rental Florida",
+    "Peter Renz Limo,Peter Renz Limo Services,Peter Renz Limo Services Corp,limousine hire service,SUV hire service,limousine service Lauderhill,limousine hire Florida",
+  tagline:
+    "We have well-vetted professional drivers that guarantee your safety to your destination.",
+  summary:
+    "We provide Limousine and SUV transportation in Lauderhill, Broward County, Florida.",
+  about: `Peter Renz Limo Services has been serving Lauderhill, Florida for over 10+ years, offering unparalleled customer service, comfort and unmatched rates in luxury car rides. Whether you need a luxury car ride for a business meeting, a tourist vacation or just for a drive in Broward County, our professional drivers will help you reach your destination with the most quality experience for your needs.`,
+  about_2: `At Peter Renz Limo Services, we strive to provide our customers with luxury car rides driven by professional drivers. If for any reason you're not satisfied with your experience, we're here to help.`,
   address: "2930 NW 55th ave apt 1B Lauderhill FL 33313",
   address_line1: "2930 NW 55th ave apt 1B",
   address_line2: "Lauderhill FL 33313",
